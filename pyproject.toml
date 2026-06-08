@@ -1,0 +1,36 @@
+[build-system]
+requires = ["uv_build >= 0.11.7, <0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "beanml"
+version = "1.0.0"
+description = "A framework for creating machine learning models."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Wyatt Rosinski" },
+]
+requires-python = ">=3.11"
+keywords = ["machine-learning", "deep-learning", "pytorch-lightning", "pytorch", "models"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+
+dependencies = [
+    "lightning>=2",
+    "pydantic>=2",
+    "torch>=2",
+]
+
+[project.urls]
+Homepage = "https://github.com/Beansyboy221/BeanML"
+Source = "https://github.com/Beansyboy221/BeanML"
+Documentation = "https://github.com/Beansyboy221/BeanML/blob/main/docs/USAGE.md"
+Bug_Tracker = "https://github.com/Beansyboy221/BeanML/issues"
