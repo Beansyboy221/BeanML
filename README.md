@@ -12,4 +12,4 @@ pip install beanml
 
 ## Usage
 
-Read the [Usage Guide](https://github.com/Beansyboy221/BeanML/tree/main/docs/usage.md) to understand all of the features of BeanML and how to use them..
+Read the [Usage Guide](https://github.com/Beansyboy221/BeanML/tree/main/docs/usage.md) to understand all of the features of BeanML and how to use them.

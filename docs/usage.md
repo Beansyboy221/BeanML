@@ -35,7 +35,7 @@ class MyModel(BaseModel):
 
 config = ModelConfig(
     hidden_size=128,
-    learning_rate=1e-3,
+    learning_rate=0.001,
     optimizer=torch.optim.Adam,
 )
 
