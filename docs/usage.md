@@ -66,8 +66,8 @@ The [`ModelConfig`](../src/beanml/config.py) model configures hyperparameters.
 
 | Member | Type | Description |
 | ------ | ---- | ----------- |
-| `train_strategy` | `property → TrainStrategy` | Whether the model uses supervised or unsupervised learning |
-| `loss_function` | `property → nn.Module` | The loss function instantiated per forward pass |
+| `train_strategy` | `TrainStrategy` | Whether the model uses supervised or unsupervised learning |
+| `loss_function` | `nn.Module` | The loss function instantiated per forward pass |
 | `_define_layers()` | `method` | Build your layers here (called once via `configure_model()`) |
 | `forward(x)` | `method` | The forward pass |
 
@@ -78,7 +78,7 @@ The [`ModelConfig`](../src/beanml/config.py) model configures hyperparameters.
 | `model_params` | `ModelConfig` | *(required)* | Model hyperparameters |
 | `data_params` | `pydantic.BaseModel` | *(required)* | Data-module configuration (user-defined) |
 | `train_metric` | `str` | `"val_loss"` | Metric monitored for scheduler stepping |
-| `scaler` | `Any` | `None` | Optional gradient scaler for mixed precision |
+| `scaler` | `Any` | `None` | Optional scaler for the data |
 
 ### Auto-Registration
 
